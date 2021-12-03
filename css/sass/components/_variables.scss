@@ -1,0 +1,25 @@
+// V A R I A B L E S
+// -----------------
+$color__oscuro: #110601;
+$color__claro: #FEFEFE;
+$color__claro--variable: #ececec;
+$color__tenue: rgba(10, 10, 10, 0.185);
+$color__tenueOscuro: #110601b9;
+$color__gris--oscuro: #222222;
+$color__gris--claro: rgb(43, 43, 43);
+$color__primario: #2d1306;
+$color__secundario: #d83f2c;
+$color__terciario: #058f00;
+$fuente__primaria: 'Ubuntu',
+sans-serif;
+
+
+// ------------------
+// M I X I N S
+// ------------------
+@mixin background-img {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

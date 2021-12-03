@@ -1,0 +1,184 @@
+<!DOCTYPE html >
+<html lang="es">
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="CarlosArturoMT"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="author" content="CarlosArturoMT"/>
+    <meta name="DC.creator" content="CarlosArturoMT"/>
+    <meta name="copyright" content="CarlosArturoMT"/>
+    <meta name="description" content="Tienda de café, productos derivados de café artesanal."/>
+    <meta pproperty="og:site_name" content="Sorbito Café"/>
+    <meta property="og:title" content="Tienda de café | Sorbito Café"/>
+    <meta property="og:description" content="Tienda de café, productos derivados de café artesanal."/>
+    <meta property="og:url" content="https://SorbitoCafe.com"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:image" content="https://sorbitoCafe.detexcoco.com/assets/imgs/background/cover_Sorbito-Cafe.jpg"/>
+    <meta property="og:image:url" content="https://sorbitoCafe.detexcoco.com/assets/imgs/background/cover_Sorbito-Cafe.jpg"/>
+    <meta itemprop="image" content="https://sorbitoCafe.detexcoco.com/assets/imgs/background/cover_Sorbito-Cafe.jpg"/>
+    <meta name="twitter:image" content="https://sorbitoCafe.detexcoco.com/assets/imgs/background/cover_Sorbito-Cafe.jpg"/>
+    <meta itemprop="image" content="https://sorbitoCafe.detexcoco.com/assets/imgs/background/cover_Sorbito-Cafe.jpg"/>
+    <link rrel="image_src" href="https://sorbitoCafe.detexcoco.com/assets/imgs/background/cover_Sorbito-Cafe.jpg"/>
+    <title>Sorbito Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="../../assets/icons/logo1_Sorbito-Cafe.png"/>
+    <link rel="stylesheet" href="../../css/sass/dist/styles.css"/>
+    <link rel="stylesheet" href="../../css/sass/dist/animaciones.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <header> 
+      <nav x-data="{ open: false }"><a href="index.html">
+          <div class="flex"> <img src="../../assets/icons/logoSorbito_text1.png" alt="Logo"/></div></a>
+        <div class="equiv" @click="open = true">&equiv;</div>
+        <div class="toggle" x-show="open" @click.away="open = false">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ProMedMod.html">Menú</a></li>
+            <li><a href="salarios.html">Promociones</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <ul class="hidden">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="ProMedMod.html">Menú</a></li>
+          <li><a href="#contact">Promociones</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main> 
+      <div class="carousel slide" id="carouselExampleCaptions" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button class="active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img class="d-block cover-80" src="../../assets/imgs/background/cover_Sorbito-Cafe4.jpg" alt="Café con logo de Sorbito"/>
+            <div class="carousel-caption d-md-block d-none">
+              <h5>Tienda de Café</h5>
+              <p>Productos artesanales derivados del café.</p>
+            </div>
+          </div>
+          <div class="carousel-item"><img class="d-block cover-80" src="../../assets/imgs/background/cover_Sorbito-Cafe2.jpg" alt="mesa de madera con café"/>
+            <div class="carousel-caption d-md-block">
+              <h5>Actividades Culturales</h5>
+              <p>Promovemos el arte y el trabajo artesanal.</p>
+            </div>
+          </div>
+          <div class="carousel-item"><img class="d-block cover-80" src="../../assets/imgs/background/cover_Sorbito-Cafe3.jpg" alt="café en grano con taza de café"/>
+            <div class="carousel-caption d-md-block">
+              <h5>Espacio de Calma</h5>
+              <p>Fomentamos el bienestar psicosocial.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next </span></button>
+      </div>
+      <section>
+        <article>
+          <aside> 
+            <figure class="presentation hidden0" id="fadeIn0">
+              <div><img src="../../assets/imgs/background/cafe_postre.jpg" alt="En Texcoco"/></div>
+              <div> 
+                <h4>En Texcoco</h4>
+                <figcaption>Puedes encontrar nuestra Tienda de productos derivados del café en Texcoco, Estado de México.</figcaption>
+              </div>
+            </figure>
+            <figure class="presentation hidden0" id="fadeIn1">
+              <div><img src="../../assets/imgs/background/granos_verdes.jpg" alt="Desde Veracruz"/></div>
+              <div> 
+                <h4>Desde Veracruz</h4>
+                <figcaption>Café 100% puro, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz.</figcaption>
+              </div>
+            </figure>
+            <figure class="presentation hidden0" id="fadeIn2">
+              <div><img src="../../assets/imgs/background/mexico.jpg" alt="De México"/></div>
+              <div> 
+                <h4>De México</h4>
+                <figcaption>Podemos enviarte nuestros productos a toda la República Mexicana.</figcaption>
+              </div>
+            </figure>
+          </aside>
+        </article>
+      </section>
+      <section>
+        <article class="flex"> 
+          <aside class="flex"><img class="opacity-05" src="https://dam.ngenespanol.com/wp-content/uploads/2019/10/datos-sobre-el-cafe.jpg" alt=""/></aside>
+          <hgroup class="width-50">
+            <h4>Sobre nosotros</h4>
+            <p>Somos un grupo de personas amantes de los productos derivados del café, buscamos promover lo natural y artesanal de nuestros hermanos mexicanos, procurando ofrecer siempre lo mejor.</p>
+          </hgroup>
+        </article>
+      </section>
+      <section>
+        <article><img class="cover-middle" src="../../assets/imgs/background/mujer_cafe.jpg" alt=""/></article>
+      </section>
+      <section>
+        <article class="flex"> 
+          <hgroup class="width-60">
+            <h4>Nuestros Productos</h4>
+            <p>En Sorbito Café encontrarás café tostato en grano, molido y soluble 100% arábica e incluso mezclas con robusta, tú decides cuál es tu favorito. También tenemos granos de café confitados en chocolate, mazapán y bombones de café...</p><a href="productos.html">Ver más</a>
+          </hgroup>
+          <aside class="flex"><img class="opacity-06" src="../../assets/imgs/background/productos1.jpeg" alt=""/></aside>
+        </article>
+      </section>
+      <section>
+        <article><img class="hidden0 cover-buy" id="fadeIn3" src="../../assets/imgs/background/compra.png" alt=""/></article>
+      </section>
+      <section id="contact">
+        <article class="flex1">
+          <aside class="flex1__aside">
+            <h4>Dirección</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d940.1813352330511!2d-98.8804663!3d19.5104491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e7b350eeaaab%3A0x42c02f89b3a284e9!2sConsciente%20Colectivo!5e0!3m2!1sen!2smx!4v1633723692101!5m2!1sen!2smx" allowfullscreen="" loading="lazy" title="Mapa de GoogleMaps para llegar a Sorbito Café"></iframe>
+          </aside>
+          <aside class="flex1__aside">
+            <form action="../../form.php" method="POST">
+              <h4>Contáctanos</h4>
+              <div class="container-inputs">
+                <input type="text" hidden="hidden" name="profesionista" value="Sorbito Café"/>
+                <input type="email" hidden="hidden" name="destino1" value="carlosarturomt@gmail.com"/>
+                <label for="name">Nombre </label>
+                <input type="text" placeholder="Name" name="nombre" autocomplete="on" required="required"/>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" name="correo" autocomplete="email"/>
+                <label for="phone">Teléfono</label>
+                <input type="phone" placeholder="Phone" name="numero" autocomplete="tel" required="required"/>
+                <label for="text">Mensaje</label>
+                <textarea cols="45" rows="4" name="mensaje" placeholder="Message" required="required"></textarea>
+              </div>
+              <input class="bttn" type="submit" name="btn-submit" value="Enviar"/>
+            </form>
+          </aside>
+          <div class="button__WhatsApp expandUp"><a href="https://api.whatsapp.com/send?phone=525514030520" target="_blank" rel="noopener"><img class="button__WhatsApp--home floating" src="https://detexcoco.com/assets/icons/whatsapp.png" alt="boton WhatsApp"/></a></div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section> 
+        <aside> <img src="../../assets/icons/logo_Sorbito-Cafe.png" alt="logo completo de Sorbito Café"/>
+          <p>Puedes encontrarnos en Texcoco, Estado de México.</p>
+          <p>"Con un sorbo nos conocerás; con dos, jamás nos olvidarás" (CaféVictoria)</p>
+        </aside>
+        <aside> 
+          <p>Síguenos en nuestras redes sociales</p><a href="https://www.facebook.com/SorbitoCafe2021/" target="_blank" rel="noopener noreferrer"><img src="../../assets/icons/twitter.png" alt="logo twitter"/></a><a href="https://www.facebook.com/SorbitoCafe2021/" target="_blank" rel="noopener noreferrer"><img src="../../assets/icons/facebook.png" alt="logo facebook"/></a><a href="https://www.instagram.com/sorbito_cafe/" target="_blank" rel="noopener noreferrer"><img src="../../assets/icons/instagram.png" alt="logo instagram"/></a>
+        </aside>
+      </section>
+      <section> 
+        <h5><span>&copy</span><span>2021 </span><span> SorbitoCafé</span></h5><small>Desarrollo por<a href="https://detexcoco.com/profesionistas/otros/mexico/carlos-arturo-miranda-trujano"> CarlosArturoMT</a></small>
+      </section>
+    </footer>
+  </body>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" rossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/animaciones.js"></script>
+</html>
