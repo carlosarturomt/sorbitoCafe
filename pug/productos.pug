@@ -11,18 +11,41 @@ block contenidos
             h2 Nuestros Productos 
           aside 
             //- C A F É 
-            +card('granos', '../../assets/imgs/products/cafeVictoria_Sorbito-Cafe_transp.png', 'Café Victoria | 500gr', 'Café tostado y molido 100% puro, el proceso de elaboración es artesanal, hecho en  Misantla,Veracruz.', '$110.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            +card('granos', '../../assets/imgs/products/cafeKaldi_Sorbito-Cafe_transp.png', 'Café Kaldi | 500gr', 'Café tostado y molido 100% puro, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz.', '$110.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            +card('granos', '../../assets/imgs/products/cafeVictoriaSoluble_Sorbito-Cafe_transp.png', 'Café   Victoria | 50gr', 'Café soluble clásico, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz.', '$40.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            +card-simple('../../assets/imgs/products/cafeVictoria_Sorbito-Cafe_transp.png', 'Café Victoria | 500gr','$120.00')
+            +card-simple('../../assets/imgs/products/cafeKaldi_Sorbito-Cafe_transp.png', 'Café Kaldi | 500gr', '$120.00')
+            +card-simple('../../assets/imgs/products/cafeVictoria_Sorbito-Cafe_transp.png', 'Café Victoria | 250gr', '$70.00')
+            +card-simple('../../assets/imgs/products/cafeKaldi_Sorbito-Cafe_transp.png', 'Café Kaldi | 250gr', '$70.00')
+            +card-simple('../../assets/imgs/products/cafeVictoriaSoluble_Sorbito-Cafe_transp.png', 'Café   Victoria | 50gr', '$50.00')
+
             //- P R O D U C T O S - S N A C K S
-            +card('granos', '../../assets/imgs/products/mazapan_Sorbito-Cafe_transp.png', 'Mazapán de Café',  'Delicioso Mazapán de café, elaborado artesanalmente en Misantla, Veracruz. Contiene 1 mazapán.', '$25.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            +card('granos', '../../assets/imgs/products/bombones_Sorbito-Cafe_transp.png', 'Bombones de Café',  'Deliciosos bombones de café, contiene 5 bombones, cada uno empaquetado de forma independiente.', '$25.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            +card('granos', '../../assets/imgs/products/granos_Sorbito-Cafe_transp.png', 'Granos Confitados',  'Deliciosos granos de café confitados en chocolate amargo. Contiene 50gr.', '$25.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            +card('granos', '../../assets/imgs/products/granosB_Sorbito-Cafe_transp.png', 'Granos Confitados','Deliciosos granos de café confitados en chocolate blanco. Contiene 50gr.', '$25.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            +card('mangos', '../../assets/imgs/products/manguitos_Sorbito-Cafe_transp.png', 'Mango Enchilado',   'Mango deshidratado enchilado, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz.', '$15.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            +card('jamaica', '../../assets/imgs/products/pikamaicas_Sorbito-Cafe.png', 'Pikamaicas', 'olitas de pulpa de jamaica y arándanos con chile, el proceso de elaboración es artesanal, hecho en  Misantla, Veracruz.', '$15.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            +card-simple('../../assets/imgs/products/mazapan_Sorbito-Cafe_transp.png', 'Mazapán de Café', '$25.00')
+            +card-simple('../../assets/imgs/products/bombones_Sorbito-Cafe_transp.png', 'Bombones de Café', '$25.00')
+            +card-simple('../../assets/imgs/products/granos_Sorbito-Cafe_transp.png', 'Granos Confitados', '$30.00')
+            +card-simple('../../assets/imgs/products/granosB_Sorbito-Cafe_transp.png', 'Granos Confitados', '$30.00')
+            +card-simple('../../assets/imgs/products/manguitos_Sorbito-Cafe_transp.png', 'Mango Enchilado', '$15.00')
+            +card-simple('../../assets/imgs/products/pikamaicas_Sorbito-Cafe.png', 'Pikamaicas', '$15.00')
+
             //- O T R O S 
-            +card('miel', '../../assets/imgs/products/miel_Sorbito-Cafe_transp.png', 'Miel de Multiflora', 'Deliciosa miel de multiflora, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz. Contiene 250ml.', '$40.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            +card('ponche', '../../assets/imgs/products/ponche_Sorbito-Cafe_transp.png', 'Ponche Frutal | 80gr', 'Contiene; Manzana, Tejocote, Guayaba, Caña, Piña, Pasitas, Ciruela pasa, Tamarindo, Jamaica, Canela y Cáscara de Naranja.', '$60.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            +card('burbujas', '../../assets/imgs/products/jabon_Sorbito-Cafe_transp.png', 'Jabón Artesanal', 'Jabón Artesanal de Café', '$40.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
-            a.button(href="index.html") Regresar
+            +card-simple('../../assets/imgs/products/miel_Sorbito-Cafe_transp.png', 'Miel de Multiflora', '$40.00')
+            +card-simple('../../assets/imgs/products/ponche_Sorbito-Cafe_transp.png', 'Ponche Frutal | 80gr', '$70.00')
+            +card-simple('../../assets/imgs/products/jabon_Sorbito-Cafe_transp.png', 'Jabón Artesanal', '$40.00')
+
+            //- +card('granos', '../../assets/imgs/products/cafeVictoria_Sorbito-Cafe_transp.png', 'Café Victoria | 500gr', 'Café tostado y molido 100% puro, el proceso de elaboración es artesanal, hecho en  Misantla,Veracruz.', '$120.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('granos', '../../assets/imgs/products/cafeKaldi_Sorbito-Cafe_transp.png', 'Café Kaldi | 500gr', 'Café tostado y molido 100% puro, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz.', '$120.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('granos', '../../assets/imgs/products/cafeVictoria_Sorbito-Cafe_transp.png', 'Café Victoria | 250gr', 'Café tostado y molido 100% puro, el proceso de elaboración es artesanal, hecho en  Misantla,Veracruz.', '$70.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('granos', '../../assets/imgs/products/cafeKaldi_Sorbito-Cafe_transp.png', 'Café Kaldi | 250gr', 'Café tostado y molido 100% puro, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz.', '$70.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('granos', '../../assets/imgs/products/cafeVictoriaSoluble_Sorbito-Cafe_transp.png', 'Café   Victoria | 50gr', 'Café soluble clásico, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz.', '$50.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- P R O D U C T O S - S N A C K S
+            //- +card('granos', '../../assets/imgs/products/mazapan_Sorbito-Cafe_transp.png', 'Mazapán de Café',  'Delicioso Mazapán de café, elaborado artesanalmente en Misantla, Veracruz. Contiene 1 mazapán.', '$25.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //-+card('granos', '../../assets/imgs/products/bombones_Sorbito-Cafe_transp.png', 'Bombones de Café',  'Deliciosos bombones de café, contiene 5 bombones, cada uno empaquetado de forma independiente.', '$25.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('granos', '../../assets/imgs/products/granos_Sorbito-Cafe_transp.png', 'Granos Confitados',  'Deliciosos granos de café confitados en chocolate amargo. Contiene 50gr.', '$25.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('granos', '../../assets/imgs/products/granosB_Sorbito-Cafe_transp.png', 'Granos Confitados','Deliciosos granos de café confitados en chocolate blanco. Contiene 50gr.', '$25.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('mangos', '../../assets/imgs/products/manguitos_Sorbito-Cafe_transp.png', 'Mango Enchilado',   'Mango deshidratado enchilado, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz.', '$15.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('jamaica', '../../assets/imgs/products/pikamaicas_Sorbito-Cafe.png', 'Pikamaicas', 'olitas de pulpa de jamaica y arándanos con chile, el proceso de elaboración es artesanal, hecho en  Misantla, Veracruz.', '$15.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- O T R O S 
+            //- +card('miel', '../../assets/imgs/products/miel_Sorbito-Cafe_transp.png', 'Miel de Multiflora', 'Deliciosa miel de multiflora, el proceso de elaboración es artesanal, hecho en Misantla, Veracruz. Contiene 250ml.', '$40.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('ponche', '../../assets/imgs/products/ponche_Sorbito-Cafe_transp.png', 'Ponche Frutal | 80gr', 'Contiene; Manzana, Tejocote, Guayaba, Caña, Piña, Pasitas, Ciruela pasa, Tamarindo, Jamaica, Canela y Cáscara de Naranja.', '$60.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- +card('burbujas', '../../assets/imgs/products/jabon_Sorbito-Cafe_transp.png', 'Jabón Artesanal', 'Jabón Artesanal de Café', '$40.00', 'https://www.dominos.com.mx/menu/paquetes-promociones')
+            //- a.button(href="index.html") Regresar
+      //- B U T T O N - F L O A T
+      +button_wh('5514030520')

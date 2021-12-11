@@ -54,8 +54,7 @@ h2 {
 h3 {
   font-weight: 500;
   font-size: 1.5rem;
-  text-transform: uppercase;
-  color: #058f00;
+  color: #110601;
 }
 
 h4 {
@@ -342,8 +341,6 @@ main section article aside figure {
   margin-top: 2%;
   margin-left: 15%;
   margin-bottom: 5%;
-  border-radius: 10px;
-  box-shadow: #110601 0px 2px 5px;
 }
 main section article aside figure div {
   width: 100%;
@@ -361,6 +358,7 @@ main section article aside figure div img {
   background-repeat: no-repeat;
 }
 main section article aside figure div h3 {
+  text-align: center;
   margin: 5% 0 1% 0;
 }
 main section article aside figure div figcaption {
@@ -368,6 +366,7 @@ main section article aside figure div figcaption {
   margin: 0 0 2% 0;
 }
 main section article aside figure div p {
+  text-align: center;
   font-size: 1rem;
   color: #2d1306;
 }
@@ -608,6 +607,9 @@ div p {
     display: flex;
     flex-wrap: wrap;
   }
+  main section article aside h3 {
+    font-size: 1rem;
+  }
   main section article aside img.opacity-05 {
     margin: 10% auto;
     margin-left: 10%;
@@ -623,11 +625,8 @@ div p {
     opacity: 1;
   }
   main section article aside figure {
-    width: 46%;
+    width: 20%;
     padding: 0px;
-    display: flex;
-    box-shadow: none;
-    min-width: 300px;
     margin-left: 2.5%;
     margin-bottom: 0.5%;
   }
@@ -673,7 +672,7 @@ div p {
 }
 @media screen and (min-width: 1300px) {
   main section article aside figure {
-    width: 46%;
+    width: 13.5%;
   }
   main section article aside figure div img {
     height: 175px;

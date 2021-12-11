@@ -63,12 +63,13 @@ main {
           margin-top: 2%;
           margin-left: 15%;
           margin-bottom: 5%;
-          border-radius: 10px;
-          box-shadow: $color__oscuro 0px 2px 5px;
+          // border-radius: 10px;
+          // box-shadow: $color__oscuro 0px 2px 5px;
 
           div {
             width: 100%;
             margin-left: 0%;
+
 
             a {
               width: 100%;
@@ -84,6 +85,7 @@ main {
             }
 
             h3 {
+              text-align: center;
               margin: 5% 0 1% 0;
             }
 
@@ -93,6 +95,7 @@ main {
             }
 
             p {
+              text-align: center;
               font-size: 1rem;
               color: $color__primario;
             }
@@ -353,6 +356,10 @@ div {
           display: flex;
           flex-wrap: wrap;
 
+          h3 {
+            font-size: 1rem;
+          }
+
           img {
             &.opacity-05 {
               margin: 10% auto;
@@ -372,11 +379,11 @@ div {
           }
 
           figure {
-            width: 46%;
+            width: 20%;
             padding: 0px;
-            display: flex;
-            box-shadow: none;
-            min-width: 300px;
+            // display: flex;
+            // box-shadow: none;
+            // min-width: 300px;
             margin-left: 2.5%;
             margin-bottom: 0.5%;
 
@@ -441,8 +448,7 @@ div {
         // C A R D
         aside {
           figure {
-            width: 46%;
-
+            width: 13.5%;
             div {
               img {
                 height: 175px;

@@ -43,6 +43,7 @@ mixin homepage_head(descripcion, sitename, imagen, title)
 		link(href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet")
 		link(rel="icon" type="image/png" href="../../assets/icons/logo1_Sorbito-Cafe.png")
 		link(rel="stylesheet" href="../../css/sass/dist/styles.css")
+		link(rel="stylesheet" href="../../css/sass/dist/animaciones.css")
 //- H O M E P A G E  - H E A D E R
 mixin header
 	header 
@@ -97,6 +98,15 @@ mixin card(clase, img, title, description, price, url)
 			p ★★★★★
 			a(href=url target="_blank" rel="noopener noreferrer"):  span.trolley
 
+//- C A R D - S I M P L E 
+mixin card-simple(img, title, price, url)
+	figure 
+		div: img(src=img alt=title)
+		div 
+			h3=title 
+			p="MXN "+price
+			//- a(href=url target="_blank" rel="noopener noreferrer"):  span.trolley
+
 //- C A R D | P R E S E N T A T I O N
 mixin card-presentation(id, img, title, description)
 	figure.presentation.hidden0(id=id)
@@ -104,29 +114,7 @@ mixin card-presentation(id, img, title, description)
 		div 
 			h4=title 
 			figcaption=description
-
-//- C A R D - G A L L E R Y
-mixin card_gallery(title, url, text)
-	article.container__card
-		aside.container__card--header
-			hgroup
-				h2=title
-				h3=date
-		img.container__card--cover-100(src=url alt="cover")
-		p=text
-
-//- C A R D - G A L L E R Y - S I M P L E
-mixin card_gallery-simple(icon, name, date, text, url, alt)
-	article.container__card100
-		aside.container__card100--header
-			img.container__card100--header-photo.border-radius(src=icon alt="profile photo")
-			hgroup
-				.flex
-					h3=name
-					span= date
-				p=text
-		img.container__card100--cover-100(src=url alt=alt)
-
+ 
 //- B U T T O N - F L O A T
 mixin button_wh(numero)
 	.button__WhatsApp.expandUp: a(href="https://api.whatsapp.com/send?phone=52"+numero target="_blank" rel="noopener"): img.button__WhatsApp--home.floating(src="https://detexcoco.com/assets/icons/whatsapp.png", alt="boton WhatsApp")
