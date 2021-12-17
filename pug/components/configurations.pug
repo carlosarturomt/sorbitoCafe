@@ -17,26 +17,18 @@ mixin homepage_head(descripcion, sitename, imagen, title)
 		meta(name="author" content="carlosArturoMT")
 		meta(name="DC.creator" content="carlosArturoMT")
 		meta(name="copyright" content="carlosArturoMT")
-		meta(name="description"
-			content= descripcion)
-		meta(pproperty="og:site_name" content=sitename)
+		meta(name="description"	content= descripcion)
+		meta(property="og:site_name" content=sitename)
 		meta(property="og:title" content=sitename)
-		meta(property="og:description"
-			content=descripcion)
-		meta(property="og:image"
-			content=imagen)
-		meta(property="og:image:url"
-			content=imagen)
+		meta(property="og:description" content=descripcion)
+		meta(property="og:image" content=imagen)
+		meta(property="og:image:url" content=imagen)
 		meta(property="og:url" content="https://DeTexcoco.com")
 		meta(property="og:type" content="blog")
-		meta(itemprop="image"
-			content=imagen)
-		meta(name="twitter:image"
-			content=imagen)
-		meta(itemprop="image"
-			content=imagen)
-		link(rrel="image_src"
-			href=imagen)
+		meta(itemprop="image" content=imagen)
+		meta(name="twitter:image"	content=imagen)
+		meta(itemprop="image" content=imagen)
+		link(rel="image_src"	href=imagen)
 		title= title
 		link(rel="preconnect" href="https://fonts.googleapis.com")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
@@ -56,13 +48,13 @@ mixin header
 				ul
 					li: a(href="index.html") Inicio
 					li: a(href="productos.html") Productos
-					li: a(href="ProMedMod.html") Menú
+					li: a(href="menu.html") Menú
 					li: a(href="salarios.html") Promociones
 					li: a(href="#contact") Contacto
 			ul.hidden
 				li: a(href="index.html") Inicio
 				li: a(href="productos.html") Productos
-				li: a(href="ProMedMod.html") Menú
+				li: a(href="menu.html") Menú
 				li: a(href="#contact") Promociones
 				li: a(href="#contact") Contacto
 
@@ -114,6 +106,16 @@ mixin card-presentation(id, img, title, description)
 		div 
 			h4=title 
 			figcaption=description
+
+//- C A R D | M E N U
+mixin card-menu(img, title, productPrice1, productPrice2, productPrice3)
+	figure.menu
+		div: img(src=img alt=title)
+		div 
+			h4=title 
+			p=productPrice1
+			p=productPrice2
+			p=productPrice3
  
 //- B U T T O N - F L O A T
 mixin button_wh(numero)

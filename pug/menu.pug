@@ -1,0 +1,19 @@
+extend components/template1.pug
+block contenidos
+  +homepage_head('Sorbito Café es una tienda de Café, productos derivados del café elaborados artesanalmente en Veracruz, México. En esta página encontrarás algunos de nuestros productos.', 'Sorbito Café', 'https://sorbitoCafe.detexcoco.com/assets/imgs/background/cover_Sorbito-Cafe.jpg', 'Sorbito Café | Menú')
+  body 
+    +header 
+    main 
+      section.flex
+        article.top-5
+          hgroup 
+            h1 TIENDA DE CAFÉ
+            h2 Nuestro Menú 
+          aside 
+            //- C A F É 
+            +card-menu('../../assets/imgs/menu/coffee-frappe.jpg', 'FRAPPÉ', 'Frappé Clásico..............$45.00', 'Frappé Galleta..............$50.00', 'Frappé Moka.................$50.00')
+            +card-menu('../../assets/imgs/menu/coffee.jpg', 'CAFÉ', 'Café Americano............$25.00', 'Café con Leche.............$35.00', 'Café Latte......................$45.00')
+            +card-menu('../../assets/imgs/menu/cookies.jpg', 'POSTRES', 'Galletas Artesanales...$35.00', 'Tartaletas Caseras......$35.00', 'Buñielos Caseros........$35.00')
+
+      //- B U T T O N - F L O A T
+      +button_wh('5514030520')

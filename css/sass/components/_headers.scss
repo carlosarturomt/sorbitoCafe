@@ -2,8 +2,9 @@
 
 header {
   width: 100%;
-  z-index: 999;
-  position: fixed;
+
+  // z-index: 999;
+  // position: fixed;
   a,
   nav {
     display: flex;
@@ -22,11 +23,14 @@ header {
   ul {
     padding-left: 0;
     margin-bottom: 0;
+
     li {
       font-size: 1.2rem;
+
       a {
         color: white;
         text-decoration: none;
+
         &:hover {
           font-weight: 600;
           color: $color__terciario;
@@ -38,6 +42,8 @@ header {
   nav {
     padding: 0 3%;
     background-color: $color__claro;
+
+    // box-shadow: 0px -10px 25px 1px $color__oscuro;
     img {
       width: 6rem;
       margin: 7.5px 0px 7.5px 0px;
@@ -51,7 +57,17 @@ header {
 }
 
 .equiv {
+  position: fixed;
   font-size: 3rem;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 4px 0px;
   color: $color__oscuro;
 
   &:hover {
@@ -61,7 +77,7 @@ header {
 }
 
 .toggle {
-  position: absolute;
+  position: fixed;
   right: 5px;
   top: 5px;
   padding: 3%;
@@ -77,6 +93,12 @@ header {
 
 // R E S P O N S I V E  D E S I G N 
 @media screen and (min-width:900px) {
+  header {
+    z-index: 999;
+    position: fixed;
+
+  }
+
   .equiv {
     display: none;
   }
@@ -98,5 +120,9 @@ header {
         color: $color__oscuro !important;
       }
     }
+  }
+
+  nav {
+    box-shadow: 0px -10px 25px 1px $color__oscuro;
   }
 }

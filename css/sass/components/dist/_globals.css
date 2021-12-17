@@ -18,7 +18,7 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   transition: 0.9s ease all;
-  background: #ececec;
+  background: #FEFEFE;
 }
 
 li {

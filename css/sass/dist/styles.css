@@ -18,7 +18,7 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   transition: 0.9s ease all;
-  background: #ececec;
+  background: #FEFEFE;
 }
 
 li {
@@ -65,8 +65,6 @@ h4 {
 
 header {
   width: 100%;
-  z-index: 999;
-  position: fixed;
 }
 header a,
 header nav {
@@ -109,7 +107,17 @@ header nav img {
 }
 
 .equiv {
+  position: fixed;
   font-size: 3rem;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 4px 0px;
   color: #110601;
 }
 .equiv:hover {
@@ -118,7 +126,7 @@ header nav img {
 }
 
 .toggle {
-  position: absolute;
+  position: fixed;
   right: 5px;
   top: 5px;
   padding: 3%;
@@ -132,6 +140,11 @@ header nav img {
 }
 
 @media screen and (min-width: 900px) {
+  header {
+    z-index: 999;
+    position: fixed;
+  }
+
   .equiv {
     display: none;
   }
@@ -150,6 +163,10 @@ header nav img {
   }
   ul li a {
     color: #110601 !important;
+  }
+
+  nav {
+    box-shadow: 0px -10px 25px 1px #110601;
   }
 }
 footer {
@@ -443,6 +460,38 @@ main section article aside figure.presentation div figcaption {
   font-size: 1rem;
   margin: 0 0 2% 0;
 }
+main section article aside figure.menu {
+  width: 80%;
+  margin-top: 12.5%;
+  margin-left: 10%;
+  margin-bottom: 12.5%;
+  border-radius: 10px;
+  display: block;
+  min-width: 50px;
+  padding: 0;
+  box-shadow: none;
+}
+main section article aside figure.menu div {
+  margin: 0;
+}
+main section article aside figure.menu div img {
+  width: 70%;
+  height: auto;
+  margin: 0 15%;
+  object-fit: cover;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main section article aside figure.menu div h4 {
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+main section article aside figure.menu div p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 5px 0 2% 0;
+}
 main section article hgroup {
   text-align: center;
 }
@@ -502,7 +551,7 @@ main section article hgroup p {
 }
 
 .top-5 {
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 .trolley {
@@ -638,6 +687,11 @@ div p {
     margin-top: 5%;
     margin-bottom: 5%;
   }
+  main section article aside figure.menu {
+    width: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   main section article hgroup.width-50 {
     width: 50%;
     padding: 0;
@@ -660,10 +714,6 @@ div p {
   .button {
     width: auto;
     margin: 1.5% 0 5% 3.3%;
-  }
-
-  .top-5 {
-    margin-top: 5%;
   }
 
   .cover-80 {

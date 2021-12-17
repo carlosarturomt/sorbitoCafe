@@ -167,6 +167,43 @@ main {
             }
           }
         }
+
+        figure.menu {
+          width: 80%;
+          margin-top: 12.5%;
+          margin-left: 10%;
+          margin-bottom: 12.5%;
+          border-radius: 10px;
+          display: block;
+          min-width: 50px;
+          padding: 0;
+          box-shadow: none;
+
+          div {
+            margin: 0;
+
+            img {
+              width: 70%;
+              height: auto;
+              margin: 0 15%;
+              object-fit: cover;
+              border-radius: 50%;
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+
+            h4 {
+              text-align: center;
+              margin: 5px 0 0 0;
+            }
+
+            p {
+              text-align: center;
+              font-size: 1rem;
+              margin: 5px 0 2% 0;
+            }
+          }
+        }
       }
 
       hgroup {
@@ -237,7 +274,7 @@ main {
 }
 
 .top-5 {
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 .trolley {
@@ -381,9 +418,6 @@ div {
           figure {
             width: 20%;
             padding: 0px;
-            // display: flex;
-            // box-shadow: none;
-            // min-width: 300px;
             margin-left: 2.5%;
             margin-bottom: 0.5%;
 
@@ -393,6 +427,12 @@ div {
           }
 
           figure.presentation {
+            width: 20%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+          }
+
+          figure.menu {
             width: 20%;
             margin-top: 5%;
             margin-bottom: 5%;
@@ -418,8 +458,7 @@ div {
 
         }
       }
-
-    }
+    }    
   }
 
   .flex-absolute {
@@ -429,10 +468,6 @@ div {
   .button {
     width: auto;
     margin: 1.5% 0 5% 3.3%;
-  }
-
-  .top-5 {
-    margin-top: 5%;
   }
 
   .cover-80 {
