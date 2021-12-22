@@ -3,8 +3,6 @@
 header {
   width: 100%;
 
-  // z-index: 999;
-  // position: fixed;
   a,
   nav {
     display: flex;
@@ -40,7 +38,7 @@ header {
   }
 
   nav {
-    padding: 0 3%;
+    padding: 0 3% 20px;
     background-color: $color__claro;
 
     // box-shadow: 0px -10px 25px 1px $color__oscuro;
@@ -58,7 +56,7 @@ header {
 
 .equiv {
   position: fixed;
-  font-size: 3rem;
+  font-size: 2.8rem;
   right: 10px;
   width: 50px;
   height: 50px;
@@ -67,7 +65,10 @@ header {
   justify-content: center;
   border-radius: 50px;
   margin-top: 20px;
+  z-index: 20;
   box-shadow: 0px 0px 4px 0px;
+  padding: 5px;
+  background-color: #ffffff3d;
   color: $color__oscuro;
 
   &:hover {
@@ -83,6 +84,7 @@ header {
   padding: 3%;
   border-radius: 5px;
   line-height: 2rem;
+  z-index: 25;
   background-color: $color__tenueOscuro;
 }
 
@@ -123,6 +125,7 @@ header {
   }
 
   nav {
+    padding: 0 3% 0 3% !important;
     box-shadow: 0px -10px 25px 1px $color__oscuro;
   }
 }

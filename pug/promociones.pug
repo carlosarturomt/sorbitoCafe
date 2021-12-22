@@ -1,0 +1,21 @@
+extend components/template1.pug
+block contenidos
+  +homepage_head('Sorbito Café es una tienda de Café, productos derivados del café elaborados artesanalmente en Veracruz, México. En esta página encontrarás nuestras promociones.', 'Promociones de Sorbito Café', 'https://sorbitocafe.detexcoco.com/assets/imgs/promos/promo_canasta600.jpeg', 'Sorbito Café | Promociones')
+  body 
+    +header 
+    main 
+      section.flex
+        article.top-5
+          hgroup 
+            h1 TIENDA DE CAFÉ
+            h2 Nuestras Promociones 😉 
+          aside 
+            //- C A F É 
+            +card-menu('../../assets/imgs/promos/promo_canasta200.jpeg', 'Canasta Pequeña', 'Ponche de frutas, Café Kaldi, Granos de café confitados', '$200.00')
+            +card-menu('../../assets/imgs/promos/promo_canasta500.jpeg', 'Canasta Grande', 'Licor de café, café Kaldi, bombones de café, ponche de frutas, hojas de canela', '$500.00')
+            +card-menu('../../assets/imgs/promos/promo_canasta600.jpeg', 'Canasta Jumbo', 'Licor de café, cerveza de café, café victoria, ponche de frutas, hojas de canela, bombones de café', '$600.00')
+            +card-menu('../../assets/imgs/promos/promo_huacal200.jpeg', 'Huacal', 'Licor de café, pikamaikas, ponche de frutas, hojas de canela, bombones de café', '$200.00')
+            +card-menu('../../assets/imgs/promos/promo_cerve270.jpeg', 'Bandeja', 'Cerveza de café, Café victoria, Miel multiflora, bombones de café', '$270.00')
+
+      //- B U T T O N - F L O A T
+      +button_wh('5514030520')

@@ -93,7 +93,7 @@ header ul li a:hover {
   color: #058f00;
 }
 header nav {
-  padding: 0 3%;
+  padding: 0 3% 20px;
   background-color: #FEFEFE;
 }
 header nav img {
@@ -108,7 +108,7 @@ header nav img {
 
 .equiv {
   position: fixed;
-  font-size: 3rem;
+  font-size: 2.8rem;
   right: 10px;
   width: 50px;
   height: 50px;
@@ -117,7 +117,10 @@ header nav img {
   justify-content: center;
   border-radius: 50px;
   margin-top: 20px;
+  z-index: 20;
   box-shadow: 0px 0px 4px 0px;
+  padding: 5px;
+  background-color: #ffffff3d;
   color: #110601;
 }
 .equiv:hover {
@@ -132,7 +135,8 @@ header nav img {
   padding: 3%;
   border-radius: 5px;
   line-height: 2rem;
-  background-color: #110601b9;
+  z-index: 25;
+  background-color: #110601de;
 }
 
 .hidden {
@@ -166,6 +170,7 @@ header nav img {
   }
 
   nav {
+    padding: 0 3% 0 3% !important;
     box-shadow: 0px -10px 25px 1px #110601;
   }
 }
@@ -201,6 +206,17 @@ footer section small a {
 footer section small a:hover {
   color: #058f00;
   text-decoration: wavy;
+}
+footer section h5 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+footer section p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -484,12 +500,13 @@ main section article aside figure.menu div img {
   background-repeat: no-repeat;
 }
 main section article aside figure.menu div h4 {
+  font-size: 1.4rem;
   text-align: center;
   margin: 5px 0 0 0;
 }
 main section article aside figure.menu div p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 5px 0 2% 0;
 }
 main section article hgroup {
@@ -506,7 +523,6 @@ main section article hgroup.width-60 {
   width: 90%;
   margin: 5%;
   padding: 5%;
-  padding-right: 0;
   z-index: 1;
   color: #110601;
 }
@@ -655,6 +671,7 @@ div p {
     width: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   main section article aside h3 {
     font-size: 1rem;
@@ -684,13 +701,11 @@ div p {
   }
   main section article aside figure.presentation {
     width: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 2.5%;
   }
   main section article aside figure.menu {
-    width: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    width: 40%;
+    margin: 5% 2.5%;
   }
   main section article hgroup.width-50 {
     width: 50%;
@@ -702,7 +717,8 @@ div p {
   main section article hgroup.width-60 {
     width: 50%;
     padding: 0;
-    margin: 0 3% 0 2%;
+    padding-right: 0;
+    margin: 0 0 0 2%;
     position: relative;
     text-align: right;
   }
@@ -720,11 +736,23 @@ div p {
     height: 90vh;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1080px) {
+  main section article aside {
+    margin: 0 2.5%;
+  }
   main section article aside figure {
     width: 13.5%;
+    margin: 1%;
   }
   main section article aside figure div img {
     height: 175px;
+  }
+  main section article aside figure.menu {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1340px) {
+  main section article aside figure.menu {
+    width: 20%;
   }
 }

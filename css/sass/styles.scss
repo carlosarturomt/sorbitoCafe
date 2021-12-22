@@ -193,13 +193,14 @@ main {
             }
 
             h4 {
+              font-size: 1.4rem;
               text-align: center;
               margin: 5px 0 0 0;
             }
 
             p {
               text-align: center;
-              font-size: 1rem;
+              font-size: 1.2rem;
               margin: 5px 0 2% 0;
             }
           }
@@ -220,7 +221,6 @@ main {
           width: 90%;
           margin: 5%;
           padding: 5%;
-          padding-right: 0;
           z-index: 1;
           color: $color__oscuro;
 
@@ -392,6 +392,7 @@ div {
           width: auto;
           display: flex;
           flex-wrap: wrap;
+          justify-content: space-evenly;
 
           h3 {
             font-size: 1rem;
@@ -428,14 +429,12 @@ div {
 
           figure.presentation {
             width: 20%;
-            margin-top: 5%;
-            margin-bottom: 5%;
+            margin: 5% 2.5%;
           }
 
           figure.menu {
-            width: 20%;
-            margin-top: 5%;
-            margin-bottom: 5%;
+            width: 40%;
+            margin: 5% 2.5%;
           }
         }
 
@@ -451,7 +450,8 @@ div {
           &.width-60 {
             width: 50%;
             padding: 0;
-            margin: 0 3% 0 2%;
+            padding-right: 0;
+            margin: 0 0 0 2%;
             position: relative;
             text-align: right;
           }
@@ -475,7 +475,33 @@ div {
   }
 }
 
-@media screen and (min-width:1300px) {
+@media screen and (min-width:1080px) {
+  main {
+    section {
+      article {
+
+        // C A R D
+        aside {
+          margin: 0 2.5%;
+          figure {
+            width: 13.5%;
+            margin: 1%;
+            div {
+              img {
+                height: 175px;
+              }
+            }
+            &.menu {
+              width: 25%;  
+            }  
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1340px) {
   main {
     section {
       article {
@@ -483,12 +509,9 @@ div {
         // C A R D
         aside {
           figure {
-            width: 13.5%;
-            div {
-              img {
-                height: 175px;
-              }
-            }
+            &.menu {
+              width: 20%;  
+            }  
           }
         }
       }
